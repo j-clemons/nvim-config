@@ -8,9 +8,7 @@ lsp.preset('recommended')
 --     'reorder-python-imports',
 --     'sqlfluff',
 
-lsp.ensure_installed({
-    'sumneko_lua',
-})
+-- lsp.ensure_installed({})
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -31,7 +29,7 @@ lsp.setup_nvim_cmp({
 })
 
 lsp.set_preferences({
-    suggest_lsp_servers = false,
+    suggest_lsp_servers = true,
     sign_icons = {
         error = 'E',
         warn = 'W',
