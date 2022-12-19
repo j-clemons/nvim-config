@@ -160,6 +160,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Jonathan\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  tcomment_vim = {
+    loaded = true,
+    path = "C:\\Users\\Jonathan\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tcomment_vim",
+    url = "https://github.com/tomtom/tcomment_vim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Jonathan\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
