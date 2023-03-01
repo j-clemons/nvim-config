@@ -47,4 +47,14 @@ return require('packer').startup(function(use)
 
     use('github/copilot.vim')
 
+    use {
+        'j-clemons/dbt.nvim',
+        branch = 'exec-model',
+        requires = {
+            'nvim-lua/plenary.nvim',
+            'nvim-telescope/telescope.nvim',
+            'rcarriga/nvim-notify',
+        }
+    }
+
 end)
