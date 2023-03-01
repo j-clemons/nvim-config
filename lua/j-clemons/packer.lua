@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
         'EdenEast/nightfox.nvim',
         as = 'nightfox',
         config = function()
-            vim.cmd('colorscheme terafox')
+            vim.cmd('colorscheme nordfox')
         end
     })
 
@@ -42,6 +42,16 @@ return require('packer').startup(function(use)
             -- Snippets
             {'L3MON4D3/LuaSnip'},
             {'rafamadriz/friendly-snippets'},
+        }
+    }
+
+    use {
+        'j-clemons/dbt.nvim',
+        branch = 'exec-model',
+        requires = {
+            'nvim-lua/plenary.nvim',
+            'nvim-telescope/telescope.nvim',
+            'rcarriga/nvim-notify',
         }
     }
 

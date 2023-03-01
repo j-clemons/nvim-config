@@ -11,8 +11,12 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
-vim.keymap.set('n', '<C-d>', '<C-d>zz')
-vim.keymap.set('n', '<C-u>', '<C-u>zz')
+vim.keymap.set('n', '<C-j>', '<C-d>zz')
+vim.keymap.set('n', '<C-k>', '<C-u>zz')
 
 vim.keymap.set('n', '<leader>w', vim.cmd.w)
 vim.keymap.set('n', '<leader>q', vim.cmd.q)
+
+vim.keymap.set('n', '<C-z>', '<nop>')
+
+vim.keymap.set('n', '<leader>tu', 'viw~')
