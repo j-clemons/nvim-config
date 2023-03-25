@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
         'EdenEast/nightfox.nvim',
         as = 'nightfox',
         config = function()
-            vim.cmd('colorscheme terafox')
+            vim.cmd('colorscheme nordfox')
         end
     })
 
@@ -44,5 +44,7 @@ return require('packer').startup(function(use)
             {'rafamadriz/friendly-snippets'},
         }
     }
+
+    use('github/copilot.vim')
 
 end)
