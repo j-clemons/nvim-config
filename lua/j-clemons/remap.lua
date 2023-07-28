@@ -20,3 +20,4 @@ vim.keymap.set('n', '<leader>q', vim.cmd.q)
 vim.keymap.set('n', '<C-z>', '<nop>')
 
 vim.keymap.set('n', '<leader>tu', 'viw~')
+vim.keymap.set('n', '<leader>m', '<C-^>')
