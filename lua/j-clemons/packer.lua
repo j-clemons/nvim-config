@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/playground')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
+    use('tpope/vim-surround')
     use('tomtom/tcomment_vim')
 
     use {
@@ -45,16 +46,11 @@ return require('packer').startup(function(use)
         }
     }
 
-    use('github/copilot.vim')
+    -- Packer.nvim, also make sure to install nvim-lua/plenary.nvim
+    use { 'sourcegraph/sg.nvim', run = 'nvim -l build/init.lua' }
 
-    use {
-        'j-clemons/dbt.nvim',
-        branch = 'exec-model',
-        requires = {
-            'nvim-lua/plenary.nvim',
-            'nvim-telescope/telescope.nvim',
-            'rcarriga/nvim-notify',
-        }
-    }
+    use('mechatroner/rainbow_csv')
+
+    use('johnfrankmorgan/whitespace.nvim')
 
 end)

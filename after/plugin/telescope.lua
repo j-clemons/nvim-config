@@ -7,6 +7,7 @@ vim.keymap.set('n', '<leader>ps', function()
 end)
 
 local actions = require 'telescope.actions'
+local layout = require 'telescope.actions.layout'
 require('telescope').setup {
     pickers = {
         buffers = {
@@ -14,6 +15,13 @@ require('telescope').setup {
                 i = {
                     ['<C-d>'] = actions.delete_buffer,
                 }
+            }
+        }
+    },
+    defaults = {
+        mappings = {
+            i = {
+                ['<C-h>'] = layout.toggle_preview,
             }
         }
     }
