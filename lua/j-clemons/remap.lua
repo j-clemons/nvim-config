@@ -21,3 +21,6 @@ vim.keymap.set('n', '<C-z>', '<nop>')
 
 vim.keymap.set('n', '<leader>tu', 'viw~')
 vim.keymap.set('n', '<leader>m', '<C-^>')
+
+vim.keymap.set('n', 'Q', '@qj')
+vim.keymap.set('x', 'Q', ":'<,'> norm @q <CR>")
