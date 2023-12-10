@@ -39,6 +39,8 @@ return require('packer').startup(function(use)
         }
     }
 
-    use '~/.config/nvim/myPlugins/whitespace.nvim/'
+    use('mechatroner/rainbow_csv')
+
+    use('johnfrankmorgan/whitespace.nvim')
 
 end)

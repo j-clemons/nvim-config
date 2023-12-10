@@ -1,6 +1,6 @@
-require 'nvim-treesitter.install'.compilers = { "clang" }
+-- require 'nvim-treesitter.install'.compilers = { "clang" }
 require 'nvim-treesitter.configs'.setup {
-    ensure_installed = { 'help', 'python', 'c', 'lua', 'bash', 'yaml' },
+    ensure_installed = { 'python', 'c', 'lua', 'bash', 'yaml' },
 
     sync_install = false,
 
