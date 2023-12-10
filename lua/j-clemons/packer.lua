@@ -9,13 +9,7 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    use({
-        'EdenEast/nightfox.nvim',
-        as = 'nightfox',
-        config = function()
-            vim.cmd('colorscheme nordfox')
-        end
-    })
+    use({'rebelot/kanagawa.nvim'})
 
     use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
     use('nvim-treesitter/playground')
@@ -45,6 +39,6 @@ return require('packer').startup(function(use)
         }
     }
 
-    use('github/copilot.vim')
+    use '~/.config/nvim/myPlugins/whitespace.nvim/'
 
 end)
