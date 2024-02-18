@@ -43,13 +43,15 @@ return require('packer').startup(function(use)
 
     use('johnfrankmorgan/whitespace.nvim')
 
-    use('github/copilot.vim')
-
     use({
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
     })
 
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
+    use('Exafunction/codeium.vim')
+
+    use('junegunn/vim-easy-align')
 
 end)

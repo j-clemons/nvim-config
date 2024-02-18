@@ -24,3 +24,5 @@ vim.keymap.set('n', '<leader>m', '<C-^>')
 
 vim.keymap.set('n', 'Q', '@qj')
 vim.keymap.set('x', 'Q', ":'<,'> norm @q <CR>")
+
+vim.keymap.set("v", "ga", "<Plug>(EasyAlign)")
