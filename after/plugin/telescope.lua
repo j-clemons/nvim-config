@@ -26,3 +26,13 @@ require('telescope').setup {
         }
     }
 }
+
+local function file_name()
+    local file_name = vim.fn.expand('%:t')
+    return string.match(file_name, '(.*)%.')
+end
+
+vim.keymap.set('n', '<leader>fr', function()
+    -- grep search for the current filename no extension
+    builtin.grep_string({ search = file_name() })
+end)
