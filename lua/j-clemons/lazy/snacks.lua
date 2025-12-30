@@ -16,6 +16,7 @@ return {
   },
   keys = {
       { "<leader>bd", function() Snacks.bufdelete() end, desc = "Delete Buffer" },
-      { "<leader>h",  function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
+      { "<leader>hd",  function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
+      { "<leader>h",  function() Snacks.notifier.show_history() end, desc = "Show Notification History" },
   }
 }

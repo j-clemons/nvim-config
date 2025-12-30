@@ -28,3 +28,6 @@ vim.keymap.set('x', 'Q', ":'<,'> norm @q <CR>")
 vim.keymap.set("v", "ga", "<Plug>(EasyAlign)")
 
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { noremap = true, silent = true })
+
+vim.keymap.set('i', 'jk', '<Esc>')
+vim.keymap.set('i', 'kj', '<Esc>')
