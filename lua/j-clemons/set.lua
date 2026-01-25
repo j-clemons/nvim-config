@@ -29,3 +29,7 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
+
+if vim.fn.executable('rg') == 1 then
+    vim.opt.grepprg = "rg --vimgrep --no-hidden --no-heading"
+end

@@ -31,3 +31,6 @@ vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { noremap = true, silent = true })
 
 vim.keymap.set('i', 'jk', '<Esc>')
 vim.keymap.set('i', 'kj', '<Esc>')
+
+vim.keymap.set('n', '<leader>j', ":cnext<CR>zz")
+vim.keymap.set('n', '<leader>k', ":cprev<CR>zz")
