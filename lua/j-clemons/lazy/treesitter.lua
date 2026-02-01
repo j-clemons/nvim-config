@@ -4,7 +4,7 @@ return {
 
     config = function()
         require 'nvim-treesitter'.setup {
-            ensure_installed = { 'python', 'c', 'lua', 'bash', 'yaml' },
+            ensure_installed = { 'python', 'c', 'lua', 'bash', 'yaml', 'rust' },
 
             sync_install = false,
 
