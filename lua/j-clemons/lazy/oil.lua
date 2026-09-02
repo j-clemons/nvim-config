@@ -16,7 +16,7 @@ return {
               "icon",
               -- "permissions",
               -- "size",
-              -- "mtime",
+              -- { "mtime", format = "%Y-%m-%d %H:%M" },
           },
           -- Buffer-local options to use for oil buffers
           buf_options = {
@@ -49,5 +49,22 @@ return {
               },
           },
       })
+
+      -- local detail = false
+      -- require("oil").setup({
+      --     keymaps = {
+      --         ["td"] = {
+      --             desc = "Toggle file detail view",
+      --             callback = function()
+      --                 detail = not detail
+      --                 if detail then
+      --                     require("oil").set_columns({ "icon", "permissions", "size", "mtime" })
+      --                 else
+      --                     require("oil").set_columns({ "icon" })
+      --                 end
+      --             end,
+      --         },
+      --     },
+      -- })
   end
 }
